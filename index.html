@@ -17,6 +17,12 @@
             padding: 20px;
             margin-top: 20px;
         }
+        .linkedin-link {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            color: #0077b5; /* LinkedIn color */
+        }
     </style>
 </head>
 <body>
@@ -37,23 +43,24 @@
         <div class="row">
             <div class="col-md-4">
                 <!-- Replace with your image URL -->
-                <img src="your-image-url.jpg" alt="Your Name" class="img-fluid">
+                <img src="" alt="" class="img-fluid">
             </div>
             <div class="col-md-8">
                 <!-- Add your text description here -->
-                <p>Your text description goes here...</p>
+                <p></p>
             </div>
         </div>
     </main>
     <footer class="footer">
         <div class="container">
-            <span class="text-muted">&copy; <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Zhiyuan(Parker) Pan</span>
+            <span class="text-muted">&copy; {{ 'now' | date: "%Y" }} Zhiyuan(Parker) Pan</span>
             <a class="btn btn-link btn-lg" href="https://www.linkedin.com/in/zhiyuan-pan/" style="float: right;"><i class="fa fa-linkedin" title="LinkedIn"></i></a>
         </div>
     </footer>
+    <a href="https://www.linkedin.com/in/zhiyuan-pan/" class="linkedin-link" target="_blank">
+        <i class="fa fa-linkedin fa-2x"></i>
+    </a>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
-
